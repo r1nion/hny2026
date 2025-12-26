@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle 2026 Result</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #nenga-modal.overlay { background: rgba(0, 0, 0, 0.6); }
+        #nenga-modal .modal { width: 700px; max-width: 90%; padding: 30px; background:#fff; border-radius: 4px; border:none; }
+        #nenga-modal img { margin-bottom: 25px; aspect-ratio: auto; }
+        .btn-close-nenga { background: var(--black); color:#fff; padding: 12px 40px; font-size: 13px; border:none; cursor:pointer; }
+        @media (max-width: 480px) { #nenga-modal .modal { padding: 20px; } }
+    </style>
+</head>
+<body>
+    <div id="nenga-modal" class="overlay hidden">
+        <div class="modal">
+            <img src="nenga.png" alt="2026">
+            <button class="btn-close-nenga" onclick="document.getElementById('nenga-modal').classList.add('hidden')">閉じる</button>
+        </div>
+    </div>
+
+    <main class="container">
+        <h1 style="font-size:1.4rem; font-weight:normal; letter-spacing:0.2em; border-bottom:1px solid #eee; padding-bottom:10px; margin-bottom:30px;">RESULT</h1>
+        
+        <section style="margin-bottom: 40px;">
+            <button onclick="document.getElementById('nenga-modal').classList.remove('hidden')" class="btn-outline" style="border-color:var(--ny-red); color:var(--ny-red); width:100%; max-width:280px;">年賀状を表示</button>
+        </section>
+
+        <section id="result-display">
+            <p id="stats-summary" style="font-size:0.9rem; color:#666;"></p>
+            <div id="block-grid" class="share-block"></div>
+        </section>
+
+        <section id="bonus-result-display" class="hidden" style="margin-top:40px; border-top:1px dashed #eee; padding-top:40px;">
+            <p id="bonus-stats-summary" style="font-size:0.9rem; color:#666;"></p>
+            <div id="bonus-block-grid" class="share-block"></div>
+        </section>
+
+        <section id="bonus-callout" class="hidden" style="margin: 50px 0;">
+            <p id="bonus-text-msg" style="font-size:0.85rem; color:#666;"></p>
+            <button id="bonus-nav-btn" class="btn-red" onclick="location.href='./bonus.html'">2問目へ進む</button>
+        </section>
+
+        <section style="margin: 50px 0;">
+            <p style="font-size:0.8rem; color:#999; margin-bottom: 15px;">― 2026年 運勢占 ―</p>
+            <button id="omikuji-btn" class="btn-outline">おみくじを引く</button>
+        </section>
+
+        <div id="omikuji-modal" class="overlay hidden">
+            <div class="modal" style="max-width:360px; padding:40px 20px;">
+                <p style="font-size:0.8rem; color:#999;">謹賀新年</p>
+                <h2 id="fortune-res" style="font-size:3rem; color:var(--ny-red); font-weight:bold; margin: 20px 0;">？</h2>
+                <p id="fortune-msg" style="font-size:0.9rem; margin-bottom:30px;"></p>
+                <button class="btn-outline" onclick="document.getElementById('omikuji-modal').classList.add('hidden')">閉じる</button>
+            </div>
+        </div>
+
+        <nav id="nav-area" style="margin-top:80px;">
+            <button onclick="location.href='./index.html'" style="background:none; color:#999; font-size:11px; text-decoration:underline; border:none; cursor:pointer;">最初に戻る</button>
+        </nav>
+    </main>
+
+    <footer>
+        <a href="about.html">ABOUT THIS SITE</a>
+    </footer>
+    <script src="script_res.js"></script>
+</body>
+</html>

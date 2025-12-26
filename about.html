@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT THIS SITE</title><link rel="stylesheet" href="style.css">
+    <style>
+        body { background: #fcfcfc; }
+        .about-section { text-align: left; margin-top: 40px; }
+        .about-section h2 {
+            font-size: 0.9rem;
+            letter-spacing: 0.2em;
+            color: var(--ny-red);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-weight: normal;
+        }
+        .about-section p, .about-section li {
+            font-size: 0.85rem;
+            color: #666;
+            list-style: none;
+            padding: 0;
+        }
+        .tech-list li { margin-bottom: 10px; }
+        .tech-list b {
+            color: var(--black);
+            font-weight: normal;
+            border-bottom: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 1.2rem; font-weight: normal; letter-spacing: 0.3em; margin-bottom: 40px;">ABOUT THIS SITE</h1>
+
+        <div class="about-section">
+            <h2>CONCEPT</h2>
+            <p>ミニゲームと共に、新年のご挨拶をお届けする年賀状的なものです。<br>せっかくなので楽しんでもらえると嬉しいです！</p>
+
+            <h2>TECHNOLOGY</h2>
+            <ul class="tech-list">
+                <li><b>Hosting:</b> GitHub Pages</li>
+                <li><b>Storage:</b> Cloudflare R2 (Object Storage)</li>
+                <li><b>Logic:</b> Vanilla JavaScript</li>
+            </ul>
+
+            <h2>PHOTO</h2>
+            <p>全て私が撮影したものです。個人使用に限ります。</p>
+            
+            <h2>MESSAGE</h2>
+            <p>もし予期せぬ動作がありましたら、何卒ご報告お願いします！</p>
+            <p style="font-size: 10px; color:#999; margin-top:10px;">© 2026 Nagasaki</p>
+
+            </p>
+        </div>
+
+        <div style="margin-top: 80px;">
+            <button onclick="history.back()" class="btn-outline" style="font-size: 11px; border-color:#eee; color:#999; text-decoration: none;">戻る</button>
+        </div>
+    </div>
+</body>
+</html>

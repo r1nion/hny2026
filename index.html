@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>謹賀新年 Wordle 2026</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="how-to-modal" class="overlay hidden">
+        <div class="modal">
+            <img src="how-to.png" alt="遊び方説明">
+            <button class="btn-red" onclick="document.getElementById('how-to-modal').classList.add('hidden')" style="width:100%">閉じる</button>
+        </div>
+    </div>
+
+    <div id="choice-modal" class="overlay hidden">
+        <div class="modal">
+            <h2>謹賀新年</h2>
+            <p style="font-size: 0.9rem; color:#666; margin-bottom:30px;">すでに一度クリアしています。<br>どうしますか？</p>
+            <button onclick="document.getElementById('choice-modal').classList.add('hidden')" style="background:#666; width:100%; margin-bottom:10px;">もう一度遊ぶ</button>
+            <button onclick="location.href='./result.html'" class="btn-red" style="width:100%;">結果画面へ進む</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 style="color:var(--ny-red); margin-bottom: 0; letter-spacing:0.1em;">NEW YEAR WORDLE</h1>
+        <p style="margin-top: 5px; font-size: 12px; color: #666;">答えを当てるまで終われない！新年の運試し</p>
+        
+        <div id="board" class="grid"></div>
+
+        <div id="ui-area">
+            <input type="text" id="guess-input" maxlength="5" autocomplete="off" placeholder="?????">
+            <br>
+            <button id="submit-btn" style="width: 80%; background: var(--ny-red);">回答する</button>
+            <br>
+            <button onclick="document.getElementById('how-to-modal').classList.remove('hidden')" style="background:none; color:#999; text-decoration:underline; font-size:12px; margin-top:15px; border:none; cursor:pointer;">遊び方を見る</button>
+            <button id="hint-btn" class="hidden" style="background:#ff4757; margin-top:15px;">？ ヒント</button>
+        </div>
+    </div>
+
+    <footer id="main-footer">
+        <a href="about.html">ABOUT THIS SITE</a>
+    </footer>
+
+    <img id="horse-runner" src="horse.png" alt="走る馬">
+    <script src="script1.js"></script>
+</body>
+</html>
