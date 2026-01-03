@@ -106,7 +106,7 @@ button:hover { opacity: 0.7; }
 #horse-runner {
     position: fixed;
     top: 45%;
-    right: -200px;
+    right: -200px; /* Start from right */
     z-index: 9999;
     width: 120px;
     opacity: 0.6;
